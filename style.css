@@ -1,12 +1,18 @@
 *{
 	padding: 0;
 	margin: 0;
+	font-family: -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 
 }
 *, :after, :before {
     box-sizing: inherit;
 }
+
 .header
+{
+	height: 50px;
+}
+.header-fx
 {
 	background: #0198d0;
 	height: 50px;
@@ -15,6 +21,9 @@
 	align-items: center;
 	padding-right: 15px;
 	padding-left: 20px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
 }
 .header-btn__logo
 {
@@ -56,6 +65,8 @@
 	list-style: none;
 	display: flex;
 	align-items: center;
+	padding-left: 0px;
+	margin-right: 35px;
 }
 .header-nav_item
 {
@@ -74,6 +85,25 @@
 .relative-item
 {
 	position: relative;
+}
+
+.main-slider
+{
+	height: 240px;
+	max-width: 100%;
+	overflow: hidden;
+}
+.slide
+{
+	width: 100%;
+	height: 100%;
+}
+.slide-img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	margin-top: -20%;
 }
 .mess-counter
 {
@@ -111,7 +141,6 @@
     background: #fff;
     padding-right: 30px;
     font-size: 14px;
-    font-size: .875rem;
     line-height: 1.02857;
 }
 .c-ad-price__regular--small {
@@ -121,10 +150,9 @@
     font-weight: 700;
 }
 .c-ad-price__regular {
-    font-size: 24px;
-    font-size: 1.5rem;
     line-height: 1;
     font-weight: 700;
+    color: #313131;
 }
 .favourite-container {
     position: relative;
@@ -138,14 +166,18 @@
 }
 .t-mobile .c-ad-title {
     background-color: #fff;
+    color: #272727;
 }
 .c-ad-title h1 {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+    font-weight: 500;
+	color: #272727;
 }
 .c-ad-title {
     word-break: break-word;
+    color: #272727;
 }
 .container-ad__location {
     padding-top: 10px;
