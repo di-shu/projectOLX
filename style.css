@@ -127,6 +127,12 @@
     letter-spacing: .04em;
     visibility: hidden;
 }
+.main-container
+{
+	max-width: 1600px;
+	margin-right: auto;
+	margin-left: auto;
+}
 .container-ad__header {
     margin-bottom: 7px;
     padding: 15px 15px 13px;
@@ -192,6 +198,8 @@
     color: #959595;
     z-index: 2;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .c-location img {
     width: 10px;
@@ -373,7 +381,7 @@ a {
     border-radius: 14px;
     font-size: 12px;
     letter-spacing: .4px;
-    height: 28px;
+    height: 15px;
     line-height: 14px;
     max-width: 90%;
     position: relative;
@@ -381,7 +389,7 @@ a {
 .c-map__icon {
     position: absolute;
     left: 12px;
-    top: 6px;
+    top: 7px;
 }
 .c-map__name {
     overflow: hidden;
@@ -404,6 +412,10 @@ a {
     align-items: flex-end;
     background: url(https://static-olxeu.akamaized.net/app/static/media/staticmap.26f065dba.svg) no-repeat 50%;
     background-size: auto 107px;
+}
+.c-ad-footer
+{
+	margin-bottom: 50px;
 }
 .c-ad-footer .shareOnFacebookLink {
     display: flex;
@@ -523,6 +535,7 @@ button span {
     list-style: none;
     padding-right: 0;
     background: #f9f9f9;
+    margin-bottom: 50px;
 }
 .recommendations-list__item-link {
     text-decoration: none;
