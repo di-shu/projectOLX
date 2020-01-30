@@ -35,6 +35,8 @@
 {
 	height: 14px;
 	width: 14px;
+	display: flex;
+	
 }
 .button-back+.olx-logo
 {
