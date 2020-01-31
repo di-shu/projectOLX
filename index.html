@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="icon" href="favicon.ico">
 
 </head>
@@ -57,29 +56,44 @@
 
 	<main class="main">
 		<div class="main-content">
-			<div  class="main-slider ">
-			  	<div сlass="slide">
-			  		<img class="slide-img" onclick="fullscreen()" src="https://estore.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_11_pro_sg_2_3_1_2.jpeg" alt="">
-			  	</div>
-			  	<div сlass="slide">
-					<img class="slide-img" onclick="fullscreen()" src="https://estore.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_11_pro_sg_2_3_1_2.jpeg" alt="">
-			  	</div>
-			</div>
 			
-			<div id="myModal">
-				<a href="#" class="modal-button" onclick="document.getElementById('myModal').style.display='none';">
+
+			<div  class="photo_container">
+				<div id="qa-photo-component" class="qa-photo-component  has-contact-visible">
+					<div id="qa-swiper-preview" class="qa-swiper-preview swiper-preview">
+						<div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android">
+							<div class="swiper-wrapper">
+								<div  class="swiper-slide swiper-slide-active" style="width: 818px;">
+									<div  class="swiper-zoom-container">
+										<img src="https://apollo-ireland.akamaized.net:443/v1/files/lvrf172g0t0l3-UA/image;s=933x700" alt="Fiat Doblo автошрот розборка">
+									</div>
+								</div>
+								<div  class="swiper-slide swiper-slide-next" style="width: 818px;">
+									<div class="swiper-zoom-container">
+										<img class="swiper-lazy swiper-lazy-loaded" alt="Fiat Doblo автошрот розборка - 2" srcset="https://apollo-ireland.akamaized.net:443/v1/files/uqo1er2r4853-UA/image;s=389x272 1x,https://apollo-ireland.akamaized.net:443/v1/files/uqo1er2r4853-UA/image;s=516x361 2x,https://apollo-ireland.akamaized.net:443/v1/files/uqo1er2r4853-UA/image;s=1000x700 3x" src="https://apollo-ireland.akamaized.net:443/v1/files/uqo1er2r4853-UA/image;s=933x700" >
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+								<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1">
+									
+								</span>
+								<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+							</div>
+							<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+
+						</div>
+
+						
+						
+					</div>
+				</div>
+				<button id="btn-close-prev" class="btn-close-preview">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" color="#fff" style="height: 14px; width: 14px;"><path fill="currentColor" d="M14 6.125H3.351l4.891-4.891L7 0 0 7l7 7 1.234-1.234L3.35 7.875H14z" fill-rule="evenodd"></path></svg>
-				</a>
-				<div class="modal-content">
-					<div id="main-slider" class="main-slider modal-slider ">
-				  	<div сlass="slide modal-slide">
-				  		<img class="slide-img modal-img"  src="https://estore.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_11_pro_sg_2_3_1_2.jpeg" alt="">
-				  	</div>
-				  	<div сlass="slide modal-slide">
-						<img class="slide-img modal-img"  src="https://apollo-ireland.akamaized.net/v1/files/of173omirtnh2-UA/image;s=1000x563" alt="">
-				  	</div>
-			  	</div>
+				</button>
 			</div>
+
+			
 			</div>
 
 			
@@ -130,8 +144,7 @@
 	
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script type="text/javascript" src="slick/slick.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
