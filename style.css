@@ -97,10 +97,67 @@ a{
 	max-width: 100%;
 	overflow: hidden;
 }
-.slide
+#myModal
 {
+	display: none;
+	position: fixed;
+	z-index: 200;
+	left: 0;
+	right: 0;
+	top:0;
 	width: 100%;
 	height: 100%;
+	overflow: auto;
+	background-color: #000;
+}
+.modal-content
+{
+	margin: auto;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.modal-content
+{
+	-webkit-animation-name:zoom;
+	-webkit-animation-duration:0.6;
+	animation-name:zoom;
+	animation-duration:0.6;
+}
+@-webkit-keyframes zoom
+{
+	from{-webkit-transform:scale(0)}
+	to{-webkit-transform:scale(1)}
+}
+@keyframes zoom
+{
+	from{transform:scale(0)}
+	to{transform:scale(1)}
+}
+.modal-slider
+{
+	position: relative;
+	top:0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.modal-slide
+{
+	
+}
+.modal-img
+{
+	width: 60% !important;
+	object-fit: contain !important;
+	height: 80% !important ;
+}
+.slide
+{
+	
 }
 .slide-img
 {
@@ -167,6 +224,31 @@ a{
 }
 .slick-dots li.slick-active {
     background-color: #0198d0;
+}
+.modal-slider .slick-track
+{
+	margin-left: 19% !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	padding-bottom: 56px !important;
+}
+.modal-slider .slick-list
+{
+	height: 100%;
+	display: flex !important;
+	align-items: center !important;
+}
+.modal-slider .slick-dots
+{
+	bottom:66px !important;
+}
+.modal-button
+{
+	position: absolute;
+	top:20px;
+	left:20px;
+	z-index: 201;
 }
 .mess-counter
 {
@@ -745,12 +827,10 @@ element.style {
     padding-right: 0;
     background: #f9f9f9;
 }
-<style>
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-<style>
 *, :after, :before {
     box-sizing: inherit;
 }
@@ -808,7 +888,7 @@ ul {
     bottom: 0;
     margin-bottom: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 201;
     padding-top: 10px;
 }
 .btn-chat {
